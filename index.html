@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Ponto SP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚏 Meu Ponto SP</h1>
+    <p class="subtitulo">Veja quando o seu ônibus chega ao ponto, em tempo real</p>
+
+    <form class="form-busca" onsubmit="buscarParadas(event)" novalidate>
+      <input type="text" id="busca" placeholder="Ponto ou rua (ex.: Paulista)">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main>
+    <p class="mensagem"></p>
+
+    <h2>Meus pontos favoritos</h2>
+    <section class="grid favoritos"></section>
+
+    <h2>Pontos encontrados</h2>
+    <section class="grid resultados">
+      <p class="vazio">Use a busca acima para encontrar o seu ponto.</p>
+    </section>
+  </main>
+
+  <footer>
+    Dados de ônibus: SPTrans — API Olho Vivo
+  </footer>
+
+  <script src="comum.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+GLOBAL SOLUTION 2026.2 - APPLICATION DEVELOPMENT
+Projeto: Meu Ponto SP
+
+INTEGRANTES E PARTE DO TRABALHO DE CADA UM
+
+Daniel Silva de Castro - 2CCPS - RM 567894
+- Função do Vercel que faz o login e consulta a API Olho Vivo (api/olhovivo.js)
+- Código comum às duas páginas: chamada à API com tratamento de erros, mensagens e favoritos (comum.js)
+- Publicação no Vercel e README
+
+Guilherme Blanco - 2CCPS - RM 566746
+- Página inicial com a busca de pontos, validação do campo e lista de favoritos (index.html, script.js)
+
+Cauã Ceolin - RM 567328
+- Painel do ponto com a previsão de chegada, cálculo dos minutos, atualização automática e botão de favorito (ponto.html, ponto.js)
+- Estilos e responsividade (style.css)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Próximos ônibus — Meu Ponto SP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a href="index.html"> Meu Ponto SP</a>
+  </header>
+
+  <main>
+    <a class="voltar" href="index.html">← Voltar para a busca</a>
+
+    <div class="cabecalho-ponto">
+      <h1 id="nome-ponto">Carregando...</h1>
+      <button id="botao-favorito" onclick="alternarFavorito()">☆ Salvar nos favoritos</button>
+    </div>
+
+    <p class="atualizacao"></p>
+    <p class="mensagem"></p>
+
+    <section class="linhas"></section>
+
+    <p class="legenda"> Ônibus acessível · em amarelo, ônibus chegando em até 2 minutos</p>
+  </main>
+
+  <footer>
+    Dados de ônibus: SPTrans — API Olho Vivo
+  </footer>
+
+  <script src="comum.js"></script>
+  <script src="ponto.js"></script>
+</body>
+</html>
