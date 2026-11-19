@@ -52,12 +52,12 @@ function textoMinutos(minutos) {
 }
 
 // A API manda os dois terminais da linha (lt0 e lt1) e o sentido (sl)
-// sl = 1 - vai do terminal principal (lt0) para o secundário (lt1) - sl = 2: o contrário.
+// sl = 1 - o ônibus vai para o lt0, e sl = 2 - vai para o lt1
 function destinoDaLinha(linha) {
   if (linha.sl === 1) {
-    return linha.lt1;
+    return linha.lt0;
   }
-  return linha.lt0;
+  return linha.lt1;
 }
 
 // Monta um card para cada linha, com até 3 ônibus a caminho
